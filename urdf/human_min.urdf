@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<robot name="HUMAN" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <link name="base_link"/>
+
+  <joint name="base" type="fixed">
+    <parent link="base_link"/>
+    <child link="TorsoLink"/>
+  </joint>
+
+  <link name="TorsoLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.1334 0.0 0.4701"/>
+      <mass value="10.7790"/>
+      <inertia ixx="-0.3481" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.2709" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/TorsoLinkFull.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="HeadLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0459 0.0 0.0433"/>
+      <mass value="4.7372"/>
+      <inertia ixx="-0.1891" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.1891" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/HeadLinkFull.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/HeadLinkFull.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="Head" type="fixed">
+    <parent link="TorsoLink"/>
+    <child link="HeadLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 0.525"/>
+  </joint>
+
+</robot>
