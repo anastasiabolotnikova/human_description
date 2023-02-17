@@ -48,10 +48,340 @@
     </collision>
   </link>
 
+  <link name="LArmLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0 0.1328 0.0"/>
+      <mass value="1.96"/>
+      <inertia ixx="-0.3475" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.6719" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LArmLinkFull.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LArmLinkFull.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="LElbowLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000513 0.034528 -0.000934"/>
+      <mass value="0.25"/>
+      <inertia ixx="-5.9e-05" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="8e-05" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LElbowLink.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LElbowLink.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="LForearmLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0 0.15114 0.0"/>
+      <mass value="1.18"/>
+      <inertia ixx="-0.0753" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.1326" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LForearmLink.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LForearmLink.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="LHandLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0139 0.042 -0.0128"/>
+      <mass value="0.272"/>
+      <inertia ixx="-0.00029946" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.00019118" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LWrist.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/LWrist.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="RArmLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0 -0.1328 0.0"/>
+      <mass value="1.96"/>
+      <inertia ixx="-0.3475" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.6719" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RArmLinkFull.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RArmLinkFull.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="RElbowLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000513 -0.034528 -0.000934"/>
+      <mass value="0.25"/>
+      <inertia ixx="-5.9e-05" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="8e-05" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RElbowLink.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RElbowLink.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="RForearmLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.0 -0.15114 0.0"/>
+      <mass value="1.18"/>
+      <inertia ixx="-0.0753" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.1326" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RForearmLink.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RForearmLink.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="RHandLink">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0139 -0.042 -0.0128"/>
+      <mass value="0.272"/>
+      <inertia ixx="-0.00029946" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.00019118" izz="0.0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RWrist.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://human_description/meshes/RWrist.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
   <joint name="Head" type="fixed">
     <parent link="TorsoLink"/>
     <child link="HeadLink"/>
     <origin rpy="0.0 0.0 0.0" xyz="-0.025 0.0 0.525"/>
+  </joint>
+
+  <!-- Torso to left Shoulder : spherical -->
+  <link name="torso2lshoulder_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.2"/>
+      <inertia ixx="0.0000032" ixy="0.0" ixz="0.0" iyy="0.0000032" iyz="0.0" izz="0.0000032"/>
+    </inertial>
+  </link>
+
+  <link name="torso2lshoulder_2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.2"/>
+      <inertia ixx="0.0000032" ixy="0.0" ixz="0.0" iyy="0.0000032" iyz="0.0" izz="0.0000032"/>
+    </inertial>
+  </link>
+
+  <joint name="LArm_0" type="revolute">
+    <parent link="TorsoLink"/>
+    <child link="torso2lshoulder_1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.05 0.15 0.35"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="100" lower="-1.42" upper="1.57" velocity="100"/>
+  </joint>
+
+  <joint name="LArm_1" type="revolute">
+    <parent link="torso2lshoulder_1"/>
+    <child link="torso2lshoulder_2"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.2" upper="1.2" velocity="100"/>
+  </joint>
+
+  <joint name="LArm_2" type="revolute">
+    <parent link="torso2lshoulder_2"/>
+    <child link="LArmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-2.8" upper="0.9" velocity="100"/>
+  </joint>
+
+
+  <joint name="LElbow" type="revolute">
+    <parent link="LArmLink"/>
+    <child link="LElbowLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.2 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
+  </joint>
+
+
+  <joint name="LForearm" type="revolute">
+    <parent link="LElbowLink"/>
+    <child link="LForearmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.01 0.05 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-2.5" upper="0.0" velocity="100"/>
+  </joint>
+
+
+  <!-- Forearm to left Wrist connection-->
+  <link name="forearm2lwrist_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.000002" ixy="0.0" ixz="0.0" iyy="0.000002" iyz="0.0" izz="0.000002"/>
+    </inertial>
+  </link>
+
+  <joint name="LWrist_0" type="revolute">
+    <parent link="LForearmLink"/>
+    <child link="forearm2lwrist_1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.01 0.24 -0.01"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
+  </joint>
+
+  <joint name="LWrist_1" type="revolute">
+    <parent link="forearm2lwrist_1"/>
+    <child link="LHandLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-0.35" upper="0.35" velocity="100"/>
+  </joint>
+
+  <!-- Torso to right Shoulder : spherical -->
+  <link name="torso2rshoulder_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.2"/>
+      <inertia ixx="0.0000032" ixy="0.0" ixz="0.0" iyy="0.0000032" iyz="0.0" izz="0.0000032"/>
+    </inertial>
+  </link>
+
+  <link name="torso2rshoulder_2">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.2"/>
+      <inertia ixx="0.0000032" ixy="0.0" ixz="0.0" iyy="0.0000032" iyz="0.0" izz="0.0000032"/>
+    </inertial>
+  </link>
+
+  <joint name="RArm_0" type="revolute">
+    <parent link="TorsoLink"/>
+    <child link="torso2rshoulder_1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.05 -0.15 0.35"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="100" lower="-1.42" upper="1.57" velocity="100"/>
+  </joint>
+
+  <joint name="RArm_1" type="revolute">
+    <parent link="torso2rshoulder_1"/>
+    <child link="torso2rshoulder_2"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.2" upper="1.2" velocity="100"/>
+  </joint>
+
+  <joint name="RArm_2" type="revolute">
+    <parent link="torso2rshoulder_2"/>
+    <child link="RArmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-0.9" upper="2.8" velocity="100"/>
+  </joint>
+
+
+  <joint name="RElbow" type="revolute">
+    <parent link="RArmLink"/>
+    <child link="RElbowLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.0 -0.2 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-1.57" upper="1.0" velocity="100"/>
+  </joint>
+
+
+  <joint name="RForearm" type="revolute">
+    <parent link="RElbowLink"/>
+    <child link="RForearmLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="-0.01 -0.05 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="0.0" upper="2.5" velocity="100"/>
+  </joint>
+
+
+  <!-- Forearm to right Wrist connection-->
+  <link name="forearm2rwrist_1">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.05"/>
+      <inertia ixx="0.000002" ixy="0.0" ixz="0.0" iyy="0.000002" iyz="0.0" izz="0.000002"/>
+    </inertial>
+  </link>
+
+  <joint name="RWrist_0" type="revolute">
+    <parent link="RForearmLink"/>
+    <child link="forearm2rwrist_1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.01 -0.24 -0.01"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="100" lower="-1.5" upper="1.5" velocity="100"/>
+  </joint>
+
+  <joint name="RWrist_1" type="revolute">
+    <parent link="forearm2rwrist_1"/>
+    <child link="RHandLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-0.35" upper="0.35" velocity="100"/>
   </joint>
 
 </robot>
