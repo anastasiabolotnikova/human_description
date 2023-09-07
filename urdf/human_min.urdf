@@ -3,9 +3,32 @@
 
   <link name="base_link"/>
 
-  <joint name="base" type="fixed">
+  <link name="base_link1"/>
+
+  <link name="base_link2"/>
+
+  <joint name="T0" type="revolute">
     <parent link="base_link"/>
+    <child link="base_link1"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="100" lower="-3.1457" upper="3.1457" velocity="100"/>
+  </joint>
+
+  <joint name="T1" type="revolute">
+    <parent link="base_link1"/>
+    <child link="base_link2"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="100" lower="-3.1457" upper="3.1457" velocity="100"/>
+  </joint>
+
+  <joint name="T2" type="revolute">
+    <parent link="base_link2"/>
     <child link="TorsoLink"/>
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-3.1457" upper="3.1457" velocity="100"/>
   </joint>
 
   <link name="TorsoLink">
